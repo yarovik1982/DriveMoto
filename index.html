@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<title>DriveMoto</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__header-top">
+			<div class="container">
+				<div class="header-top__wrap">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#">Магазины</a>
+							</li>
+							
+							<li class="menu__item">
+								<a class="menu__link" href="#">Акции</a>
+							</li>
+							
+							<li class="menu__item">
+								<a class="menu__link" href="#">Доставка и оплата</a>
+							</li>
+						</ul>
+					</nav>
+					<a class="logo" href="#"><img class="logo__img" src="images/logo.svg" alt=""></a>
+					<div class="header__item-box">
+						<p class="header__adress">Москва, ул. Науки, 20</p>
+						<ul class="user-list">
+							<li class="user-list__item">
+								<a class="user-list__link" href="#"><img src="images/heart.svg" alt=""></a></li>
+							<li class="user-list__item">
+								<a class="user-list__link" href="#"><img src="images/user.svg" alt=""></a></li>
+							<li class="user-list__item">
+								<a class="user-list__link backet" href="#"><img src="images/backet.svg" alt=""></a></li>
+								<p class="backet-num">1</p>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__header-bottom">
+			<div class="container">
+				<div class="header-bottom__wrap">
+					<ul class="menu-categories">
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Квадроциклы</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Катера</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Гидроциклы</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Лодки</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Вездеходы</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Снегоходы</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Двигатели</a></li>
+						<li class="menu-categories__item">
+							<a class="menu-categories__link" href="#">Запчасти</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="banner-section page-section">
+		<div class="container">
+			<div class="banner-section__inner">
+				<div class="banner-section__slider">
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img class="banner-section__slider-img" src="images/main-baner.png" alt="#">
+					</a>
+				</div>
+				<a class="banner-section__item sale-item" href="#">
+					<div class="sale-item__top">
+						<p class="sale-item__info">акция</p>
+						<div class="sale-item__prise">
+							<div class="prise sale-item__prise-new">190 000</div>
+							<div class="prise sale-item__prise-old">225 000</div>
+						</div>
+					</div>
+					<img class="sale-item__img" src="images/motor.png" alt="#">
+					<h5 class="sale-item__title">Лодочный мотор 
+						Suzuki DF9.9BRS
+					</h5>
+					<div class="sale-item__footer">Акция действует до
+						<span>31.08.2020</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="serch page-section">
+		<div class="container">
+			<div class="serch__inner">
+				<div class="serch__tabs">
+					<a class="serch__tabs-item serch__tabs-item--active" href="#tab-1">Поиск по номеру</a>
+					<a class="serch__tabs-item" href="#tab-2">Поиск по марке</a>
+					<a class="serch__tabs-item" href="#tab-3">Поиск по названию товара</a>
+				</div>
+				<div class="serch__content">
+					<div class="serch__content-item serch__content-item--active" id="tab-1">
+						<form class="serch__content-form">
+							<input type="text" class="serch__content-input" placeholder="Введите номер">
+							<button type="submit" class="serch__content-btn">искать</button>	
+						</form>
+					</div>
+					<div class="serch__content-item" id="tab-2">
+						<form class="serch__content-form">
+							<input type="text" class="serch__content-input" placeholder="Введите марку">
+							<button type="submit" class="serch__content-btn">искать</button>	
+						</form>
+					</div>
+					<div class="serch__content-item" id="tab-3">
+						<form class="serch__content-form">
+							<input type="text" class="serch__content-input" placeholder="Введите название">
+							<button type="submit" class="serch__content-btn">искать</button>	
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/script.js"></script>
+	<script src="js/slick.min.js"></script>
+</body>
+</html>
+
