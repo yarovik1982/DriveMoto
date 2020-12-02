@@ -380,11 +380,11 @@ banner-section__slider-img{
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
-	transition: all 1.5s;
-	-webkit-transition: all 1.5s;
-	-moz-transition: all 1.5s;
-	-ms-transition: all 1.5s;
-	-o-transition: all 1.5s;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
 }
 
 
@@ -407,16 +407,16 @@ banner-section__slider-img{
 .categories__item-title{
 	font-weight: 700;
 	font-size: 23px;
-	line-height: 28px;
+	line-height: 8px;
 	font-family: 'Barlow',sans-serif;
-	transition: all 1.5s;
-	-webkit-transition: all 1.5s;
-	-moz-transition: all 1.5s;
-	-ms-transition: all 1.5s;
-	-o-transition: all 1.5s;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
 }
 .categories__item:hover{
-	box-shadow: 3px 3px 20px rgba(50,50,50 .25);
+	box-shadow: 3px 3px 20px rgba(50,50,50, .25);
 }
 .categories__item:hover .categories__item-title{
 	color: #1C62CD;
