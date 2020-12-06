@@ -39,7 +39,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family:"SFProDisplay", sans-serif;
 }
 
 .container {
@@ -525,7 +525,6 @@ banner-section__slider-img {
 
 .product-item__title {
     font-weight: normal;
-    /* padding: 14px 0 25px; */
 }
 
 
@@ -830,4 +829,35 @@ banner-section__slider-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+.breadcrumbs__list {
+
+}
+.breadcrumbs__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    font-family: "SFProDisplay", sans-serif ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+.breadcrumbs__list-item::after{
+    content:"";
+    position: absolute;
+    right: 0;
+    background-image: url('../images/arrow-link.svg');
+    width: 6px;
+    height: 10px;
+    bottom:4px;
+}
+.breadcrumbs__list-item:last-child::after{
+    display: none;
 }
