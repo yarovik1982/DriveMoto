@@ -10,10 +10,10 @@ $(function() {
         e.preventDefault();
 
         $('.tab').removeClass('tab--active'); // При клике удаляем класс active
-        $('.tabs__content').removeClass('tabs__content--active');
+        $('.tabs__content').removeClass('tabs-content--active');
 
         $(this).addClass('tab--active'); //При клике по табу добавляем кдасс active
-        $($(this).attr('href')).addClass('tabs__content--active'); // Добавляем атрибут табу и активируем соответствующую форму     "images/arrow-left-black.svg"
+        $($(this).attr('href')).addClass('tabs-content--active'); // Добавляем атрибут табу и активируем соответствующую форму     "images/arrow-left-black.svg"
 
     });
 
