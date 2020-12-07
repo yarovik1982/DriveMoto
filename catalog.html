@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
 
     <title>Catalog</title>
 </head>
@@ -107,7 +111,7 @@
                 <button>еще</button>
             </div>
             <div class="catalog__filter-btn">
-                <select name="" id="">
+                <select class="filter-style" name="" id="">
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
@@ -141,14 +145,39 @@
                 <div class="tabs__wrapper">
                     <div class="tabs aside-filter__tabs">
                         <a class="tab aside-filter__tab tab--active" href="#">
-                            Параметры
+                           <span>Параметры</span>
                         </a>
                         <a class="tab aside-filter__tab" href="#">
-                            по марке
+                           <span>по марке</span>                      
                         </a>
                     </div>
                     <div class="tabs__container">
                         <div class="tabs__content aside-filter__tabs-content tabs-content--active">
+
+                            <form class="aside-filter__form">
+                                <ul class="aside-filter__list">
+                                    <li class="aside-filter__item-drop">
+                                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+                                        <div class="aside-filter__content">
+                                            <div class="aside-filter__content-box">
+                                                <label class="aside-filter__content-label">
+                                                    <input  class="filter-style" type="checkbox">    
+                                                    В наличии
+                                                </label>
+                                            </div>
+                                            <div class="aside-filter__content-box">
+                                                <label class="aside-filter__content-label">
+                                                    <input  class="filter-style" type="checkbox">
+                                                    Под заказ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="aside-filter__item-drop"></li>
+                                    <li class="aside-filter__item-drop"></li>
+                                    <li class="aside-filter__item-list"></li>
+                                </ul>
+                            </form>
 
                         </div>
                         <div class="tabs__content aside-filter__tabs-content">
@@ -450,8 +479,12 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    
     <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
