@@ -4,17 +4,17 @@ $(function() {
         prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-right.svg" alt=""></button>',
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-left.svg" alt=""></button>',
     });
-});
+
 
     $('.tab').on('click', function(e) {
 
         e.preventDefault();
 
-        $('.tab').removeClass('tab--active'); // При клике удаляем класс active
-        $('.tabs__content').removeClass('tabs-content--active');
+         $($(this).siblings()).removeClass("tab--active");
+        $($(this).parent().siblings().find("div")).removeClass("tabs-content--active")
 
         $(this).addClass('tab--active'); //При клике по табу добавляем кдасс active
-        $($(this).attr('href')).addClass('tabs-content--active'); // Добавляем атрибут табу и активируем соответствующую форму     
+        $($(this).attr('href')).addClass('tabs-content--active'); // Добавляем атрибут табу и активируем соответствующую форму
 
     });
 
@@ -58,3 +58,4 @@ $(function() {
         $(".product-item__wrapper").addClass("product-item__wrapper--list");
     });
 
+});
