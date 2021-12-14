@@ -342,7 +342,7 @@ body {
 
 .banner-section__slider-img {
     object-fit: cover;
-    max-width: 400px;
+/*     max-width: 400px; */
 }
 
 .sale-item__img {
